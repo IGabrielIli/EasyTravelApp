@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="197dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="76dp"
+        android:background="@drawable/button1"
+        android:color="#17D3E6"
+        android:onClick="goToActivitygreece"
+        android:text="@string/greece"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck"
+        tools:text="ΕΛΛΑΔΑ" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="196dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="204dp"
+        android:background="@drawable/button1"
+        android:color="#17D3E6"
+        android:onClick="goToActivityabroad"
+        android:text="@string/abroad"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck"
+        tools:text="ΕΞΩΤΕΡΙΚΟ" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="322dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="147dp"
+
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="130dp"
+        android:fontFamily="@font/wendyone_regular"
+        android:text="@string/easy_travel"
+
+        android:textAlignment="center"
+        android:textColor="#17D3E6"
+        android:textSize="55sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+</android.support.constraint.ConstraintLayout>
