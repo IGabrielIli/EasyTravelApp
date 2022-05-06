@@ -6,68 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".Greece">
 
-    <RadioGroup
-        android:id="@+id/radioGroup"
-        android:layout_width="182dp"
-        android:layout_height="350dp"
-        android:layout_marginStart="160dp"
-        android:layout_marginEnd="109dp"
-        android:layout_marginBottom="260dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <RadioButton
-            android:id="@+id/radioButton7"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="48dp"
-            android:text="Αθήνα" />
-
-        <RadioButton
-            android:id="@+id/radioButton6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="48dp"
-            android:text="Θεσσαλονίκη" />
-
-        <RadioButton
-            android:id="@+id/radioButton5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="48dp"
-            android:text="Μύκονος" />
-
-        <RadioButton
-            android:id="@+id/radioButton4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="48dp"
-            android:text="Σαντορίνη" />
-
-        <RadioButton
-            android:id="@+id/radioButton3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="48dp"
-            android:text="Πάρος" />
-
-        <RadioButton
-            android:id="@+id/radioButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="48dp"
-            android:text="Ρόδος" />
-
-        <RadioButton
-            android:id="@+id/radioButton2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:minHeight="48dp"
-            android:text="Κέρκυρα" />
-    </RadioGroup>
-
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
@@ -76,69 +14,68 @@
         android:layout_marginEnd="136dp"
         android:layout_marginBottom="670dp"
         android:fontFamily="@font/wendyone_regular"
-        android:text="ΔΙΑΛΕΞΕ ΠΡΟΟΡΙΣΜΟ"
+        android:text="@string/choosedest"
         android:textColor="#17D3E6"
         android:textSize="24sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
 
-    <EditText
-        android:id="@+id/editTextDate"
-        android:layout_width="155dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginEnd="17dp"
-        android:layout_marginBottom="220dp"
-        android:ems="10"
-        android:inputType="date"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/editTextDate2"
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="182dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="126dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="343dp"
+        android:background="@drawable/button2"
+        android:onClick="showPopupafeteria"
+        android:shadowColor="@color/black"
+        android:text="@string/afetiria"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox"
+        app:layout_constraintEnd_toStartOf="@+id/button7"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <EditText
-        android:id="@+id/editTextDate2"
-        android:layout_width="155dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="17dp"
-        android:layout_marginEnd="39dp"
-        android:layout_marginBottom="220dp"
-        android:ems="10"
-        android:inputType="date"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/editTextDate"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="104dp"
-        android:layout_marginTop="39dp"
-        android:layout_marginEnd="141dp"
-        android:text="ΑΠΟ"
-        app:layout_constraintBottom_toTopOf="@+id/editTextDate"
+        android:layout_width="52dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="87dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="64dp"
+        android:text="@string/apo"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/Button5"
         app:layout_constraintEnd_toStartOf="@+id/textView4"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/button5" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="39dp"
-        android:layout_marginEnd="100dp"
-        android:text="ΕΩΣ"
-        app:layout_constraintBottom_toTopOf="@+id/editTextDate2"
+        android:layout_width="52dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="88dp"
+        android:text="@string/ews"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/button6"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/button7"
+        app:layout_constraintVertical_bias="0.0" />
 
     <CheckBox
         android:id="@+id/checkBox"
@@ -146,9 +83,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="27dp"
         android:layout_marginEnd="9dp"
-        android:layout_marginBottom="120dp"
+        android:layout_marginBottom="124dp"
         android:minHeight="48dp"
-        android:text="ΑΕΡΟΠΛΑΝΟ"
+        android:text="@string/aeroplano"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/checkBox2"
         app:layout_constraintHorizontal_bias="1.0"
@@ -162,7 +99,7 @@
         android:layout_marginEnd="6dp"
         android:layout_marginBottom="120dp"
         android:minHeight="48dp"
-        android:text="ΛΕΩΦΟΡΕΙΟ"
+        android:text="@string/lewforeio"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/checkBox3"
         app:layout_constraintStart_toEndOf="@+id/checkBox" />
@@ -175,7 +112,7 @@
         android:layout_marginEnd="28dp"
         android:layout_marginBottom="120dp"
         android:minHeight="48dp"
-        android:text="ΚΡΟΥΑΖΙΕΡΑ"
+        android:text="@string/krouaziera"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/checkBox2" />
@@ -187,10 +124,69 @@
         android:layout_marginStart="162dp"
         android:layout_marginEnd="162dp"
         android:layout_marginBottom="47dp"
-        android:textColor="@color/white"
         android:background="@drawable/button1"
-        android:text="SEARCH"
+        android:text="@string/search"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/Button5"
+        style="?android:spinnerStyle"
+        android:layout_width="132dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="184dp"
+        android:onClick="openDatePicker"
+        android:text="@string/jan_01_2020"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox"
+        app:layout_constraintEnd_toStartOf="@+id/button6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:id="@+id/button6"
+        style="?android:spinnerStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="184dp"
+        android:onClick="openDatePicker"
+        android:text="@string/jan_01_2020"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/Button5"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="182dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="127dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="512dp"
+        android:background="@drawable/button2"
+        android:onClick="showPopupafeteria"
+        android:shadowColor="@color/black"
+        android:text="@string/proorismos"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button5"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="TextContrastCheck" />
 </android.support.constraint.ConstraintLayout>

@@ -50,8 +50,8 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="322dp"
-        android:layout_height="56dp"
+        android:layout_width="351dp"
+        android:layout_height="83dp"
         android:layout_marginStart="50dp"
         android:layout_marginTop="147dp"
 
@@ -62,7 +62,7 @@
 
         android:textAlignment="center"
         android:textColor="#17D3E6"
-        android:textSize="55sp"
+        android:textSize="60sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="parent"

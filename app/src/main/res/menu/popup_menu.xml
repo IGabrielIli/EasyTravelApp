@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/england"
+        android:title="Αγγλία" />
+
+    <item
+        android:id="@+id/germnay"
+        android:title="Γερμανία" />
+
+    <item
+        android:id="@+id/usa"
+        android:title="Αμερική" />
+
+    <item
+        android:id="@+id/france"
+        android:title="Γαλλία" />
+
+    <item
+        android:id="@+id/italy"
+        android:title="Ιταλία" />
+
+    <item
+        android:id="@+id/asia"
+        android:title="Ασία" />
+
+    <item
+        android:id="@+id/spain"
+        android:title="Ισπανία" />
+
+
+</menu>

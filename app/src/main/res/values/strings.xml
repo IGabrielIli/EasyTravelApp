@@ -5,5 +5,22 @@
     <string name="abroad">ΕΞΩΤΕΡΙΚΟ</string>
     <string name="greece">ΕΛΛΑΔΑ</string>
     <string name="kleisetwra">Κλείσε το πακέτο που σου ταιριάζει ΤΏΡΑ</string>
+    <string name="athens">Αθήνα</string>
+    <string name="mukonos">Μύκονος</string>
+    <string name="thessaloniki">Θεσσαλονίκη</string>
+    <string name="santorini">Σαντορίνη</string>
+    <string name="paros">Πάρος</string>
+    <string name="rodos">Ρόδος</string>
+    <string name="kerkura">Κέρκυρα</string>
+    <string name="choosedest">ΔΙΑΛΕΞΕ ΠΡΟΟΡΙΣΜΟ</string>
+    <string name="apo">ΑΠΟ</string>
+    <string name="aeroplano">ΑΕΡΟΠΛΑΝΟ</string>
+    <string name="lewforeio">ΛΕΩΦΟΡΕΙΟ</string>
+    <string name="krouaziera">ΚΡΟΥΑΖΙΕΡΑ</string>
+    <string name="ews">ΕΩΣ</string>
+    <string name="jan_01_2020">JAN 01 2020</string>
+    <string name="search">SEARCH</string>
+    <string name="afetiria">Αφετηρία</string>
+    <string name="proorismos">Προορισμός</string>
 
 </resources>
